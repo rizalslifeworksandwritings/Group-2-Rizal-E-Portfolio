@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works | Rizal E-Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="home.html" class="brand">GROUP 2 <span>•</span> RIZAL</a>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav id="mainNav">
+    <a href="home.html">HOME</a><a href="about.html">ABOUT RIZAL</a><a class="active" href="works.html">WORKS</a><a href="reflection.html">REFLECTION</a><a href="references.html">REFERENCES</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="page-hero">
+    <p class="eyebrow">DIGITAL LIBRARY</p>
+    <h1>Rizal's Works</h1>
+    <p>Browse the collection by category, then click <strong>Explore Work</strong> to reveal the full research prepared by Group 2.</p>
+  </section>
+
+  <div class="filter-bar">
+    <button class="filter active" data-filter="all">ALL</button>
+    <button class="filter" data-filter="novel">NOVELS</button>
+    <button class="filter" data-filter="poem">POEMS</button>
+    <button class="filter" data-filter="essay">ESSAYS</button>
+    <button class="filter" data-filter="drama">DRAMA / PLAY</button>
+    <button class="filter" data-filter="letter">LETTER</button>
+    <button class="filter" data-filter="memoir">MEMOIR</button>
+    <button class="filter" data-filter="satire">SATIRE / PROSE</button>
+  </div>
+
+  <section id="worksGrid" class="works-grid"></section>
+
+  <section class="mini-game">
+    <p class="eyebrow">QUICK CHALLENGE</p>
+    <h2>Can You Match the Work to Its Genre?</h2>
+    <p>Choose the correct genre for each work.</p>
+    <div id="matchGame"></div>
+    <button class="primary-btn" onclick="checkMatches()">CHECK ANSWERS</button>
+    <p id="matchResult" class="feedback"></p>
+  </section>
+</main>
+
+<div id="workModal" class="modal hidden">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal()">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<footer>GROUP 2 • JOSÉ RIZAL E-PORTFOLIO</footer>
+<script src="./script.js" defer></script>
+</body>
+</html>

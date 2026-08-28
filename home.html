@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Rizal E-Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="home.html" class="brand">GROUP 2 <span>•</span> RIZAL</a>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav id="mainNav">
+    <a class="active" href="home.html">HOME</a>
+    <a href="about.html">ABOUT RIZAL</a>
+    <a href="works.html">WORKS</a>
+    <a href="reflection.html">REFLECTION</a>
+    <a href="references.html">REFERENCES</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">AN INTERACTIVE E-PORTFOLIO</p>
+      <h1>José Rizal:<br><span>Life, Works & Legacy</span></h1>
+      <p>Explore the life and literary contributions of one of the most influential figures in Philippine history.</p>
+      <div class="hero-buttons">
+        <a class="primary-btn" href="works.html">EXPLORE HIS WORKS</a>
+        <a class="secondary-btn" href="about.html">LEARN ABOUT RIZAL</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/rizal-portrait.jpg" alt="José Rizal portrait" onerror="this.classList.add('image-missing')">
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="quote-mark">“</div>
+    <h2>The youth is the HOPE of our future.</h2>
+    <p>— JOSE RIZAL</p>
+  </section>
+
+  <section class="preview-section">
+    <div class="section-heading">
+      <p class="eyebrow">DISCOVER</p>
+      <h2>What awaits inside?</h2>
+    </div>
+    <div class="feature-grid">
+      <a href="about.html" class="feature-card">
+        <div class="feature-icon">👤</div>
+        <h3>About Rizal</h3>
+        <p>Trace Rizal's early life, education, family, and formative experiences.</p>
+      </a>
+      <a href="works.html" class="feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>His Works</h3>
+        <p>Explore 16 literary and political works through an interactive digital library.</p>
+      </a>
+      <a href="reflection.html" class="feature-card">
+        <div class="feature-icon">💭</div>
+        <h3>Reflection</h3>
+        <p>Read Group 2's reflections on Rizal's ideas and continuing relevance.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="group-section">
+    <img src="images/group2-logo.jpg" alt="Group 2 logo" class="group-logo" onerror="this.classList.add('image-missing')">
+    <div>
+      <p class="eyebrow">THE CREATORS</p>
+      <h2>GROUP 2</h2>
+      <p>Adriano, Alia, Baradia, Carigma, Cruz, Espabilla, Fenequito, Nachura</p>
+    </div>
+  </section>
+</main>
+
+<footer>GROUP 2 • JOSÉ RIZAL E-PORTFOLIO</footer>
+<script src="./script.js" defer></script>
+</body>
+</html>
